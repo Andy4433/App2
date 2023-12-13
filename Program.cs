@@ -1,7 +1,13 @@
+using App2.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<BancoContext>
+(options => options.UseSqlServer("Data Source=DESKTOP-QTDKTPT; Initial Catalog=CRUD_MVC_SQL_DEV; Integrated Security= False"));
 
 var app = builder.Build();
 
