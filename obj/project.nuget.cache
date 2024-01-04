@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fA0XUela3cYk2jk7HyarBsrTZA2WM3kdIlzM8Opc+xzkF8zzd8oyvhGeLnXfkXSPdYsMV74k2EgDFNGSmBH2rg==",
+  "dgSpecHash": "vjLwe/u8p2e6H1qER7XJVMACnoR3o7wf5Qv7ku0sqR7JS7UkXQCXu6yC2L0GIgbzb/6nSUK0ZN004AfTHhPxAg==",
   "success": true,
   "projectFilePath": "/home/andys/projetos/projeto/App2/App2.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,7 @@
     "/home/andys/.nuget/packages/microsoft.identitymodel.protocols/6.21.0/microsoft.identitymodel.protocols.6.21.0.nupkg.sha512",
     "/home/andys/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.21.0/microsoft.identitymodel.protocols.openidconnect.6.21.0.nupkg.sha512",
     "/home/andys/.nuget/packages/microsoft.identitymodel.tokens/6.21.0/microsoft.identitymodel.tokens.6.21.0.nupkg.sha512",
+    "/home/andys/.nuget/packages/microsoft.net.build.containers/8.0.100/microsoft.net.build.containers.8.0.100.nupkg.sha512",
     "/home/andys/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "/home/andys/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/home/andys/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",

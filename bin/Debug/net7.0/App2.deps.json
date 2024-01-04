@@ -10,7 +10,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.Design": "7.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
+          "Microsoft.NET.Build.Containers": "8.0.100"
         },
         "runtime": {
           "App2.dll": {}
@@ -337,6 +338,7 @@
           }
         }
       },
+      "Microsoft.NET.Build.Containers/8.0.100": {},
       "Microsoft.NETCore.Platforms/5.0.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.SqlServer.Server/1.0.0": {
@@ -832,6 +834,13 @@
       "sha512": "sha512-AAEHZvZyb597a+QJSmtxH3n2P1nIJGpZ4Q89GTenknRx6T6zyfzf592yW/jA5e8EHN4tNMjjXHQaYWEq5+L05w==",
       "path": "microsoft.identitymodel.tokens/6.21.0",
       "hashPath": "microsoft.identitymodel.tokens.6.21.0.nupkg.sha512"
+    },
+    "Microsoft.NET.Build.Containers/8.0.100": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ow9/XknHKTy9SDMfkabuWh0EBRfFYFtKW+OU2xscYUIde3Tv3eGhUKxsiA6g729yrwQ1Hf3L9uRqlXBUJrBzkw==",
+      "path": "microsoft.net.build.containers/8.0.100",
+      "hashPath": "microsoft.net.build.containers.8.0.100.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
