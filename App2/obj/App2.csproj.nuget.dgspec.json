@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/andys/projetos/projeto/App2/App2.csproj": {}
+    "/home/andys/projetos/projeto/App2/App2/App2.csproj": {}
   },
   "projects": {
-    "/home/andys/projetos/projeto/App2/App2.csproj": {
+    "/home/andys/projetos/projeto/App2/App2/App2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/andys/projetos/projeto/App2/App2.csproj",
+        "projectUniqueName": "/home/andys/projetos/projeto/App2/App2/App2.csproj",
         "projectName": "App2",
-        "projectPath": "/home/andys/projetos/projeto/App2/App2.csproj",
+        "projectPath": "/home/andys/projetos/projeto/App2/App2/App2.csproj",
         "packagesPath": "/home/andys/.nuget/packages/",
-        "outputPath": "/home/andys/projetos/projeto/App2/obj/",
+        "outputPath": "/home/andys/projetos/projeto/App2/App2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/andys/.nuget/NuGet/NuGet.Config"
@@ -55,6 +55,10 @@
             "Microsoft.NET.Build.Containers": {
               "target": "Package",
               "version": "[8.0.100, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

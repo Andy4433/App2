@@ -1,13 +1,16 @@
 using App2.Data;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<BancoContext>
-(options => options.UseSqlServer("Data Source=DESKTOP-QTDKTPT; Initial Catalog=CRUD_MVC_SQL_DEV; Integrated Security= False"));
+(options => options.UseNpgsql("ConnectionStrings__DefaultConnection=User ID=postgres;Password=postgres;Server=db;Port=5432;Database=example; IntegratedSecurity=true; Pooling=true;"));
+
 
 var app = builder.Build();
 

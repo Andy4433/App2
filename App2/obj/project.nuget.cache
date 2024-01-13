@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vjLwe/u8p2e6H1qER7XJVMACnoR3o7wf5Qv7ku0sqR7JS7UkXQCXu6yC2L0GIgbzb/6nSUK0ZN004AfTHhPxAg==",
+  "dgSpecHash": "Tl79/zxwR7AQemvDB9i+4igXdyWGgWfEr+PRMvyZy06zYU6IGvFAdpuIKYq3SLq9RkBHZ6BTPuOHd8bMXp3W+w==",
   "success": true,
-  "projectFilePath": "/home/andys/projetos/projeto/App2/App2.csproj",
+  "projectFilePath": "/home/andys/projetos/projeto/App2/App2/App2.csproj",
   "expectedPackageFiles": [
     "/home/andys/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/home/andys/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
@@ -42,6 +42,8 @@
     "/home/andys/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/home/andys/.nuget/packages/microsoft.win32.systemevents/5.0.0/microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "/home/andys/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/home/andys/.nuget/packages/npgsql/7.0.0/npgsql.7.0.0.nupkg.sha512",
+    "/home/andys/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.0/npgsql.entityframeworkcore.postgresql.7.0.0.nupkg.sha512",
     "/home/andys/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/home/andys/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/home/andys/.nuget/packages/system.configuration.configurationmanager/5.0.0/system.configuration.configurationmanager.5.0.0.nupkg.sha512",
@@ -59,6 +61,7 @@
     "/home/andys/.nuget/packages/system.resources.resourcemanager/4.3.0/system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "/home/andys/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
     "/home/andys/.nuget/packages/system.runtime.caching/5.0.0/system.runtime.caching.5.0.0.nupkg.sha512",
+    "/home/andys/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/home/andys/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
     "/home/andys/.nuget/packages/system.security.cryptography.cng/5.0.0/system.security.cryptography.cng.5.0.0.nupkg.sha512",
     "/home/andys/.nuget/packages/system.security.cryptography.protecteddata/5.0.0/system.security.cryptography.protecteddata.5.0.0.nupkg.sha512",
