@@ -1,3 +1,5 @@
+using App2.Models;  
+using App2.Repositorio;
 using App2.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,10 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 // Adicione serviços ao contêiner.
 builder.Services.AddControllersWithViews();
 
+// criando conexão com o db sql server
 var connectionString = builder.Configuration.GetConnectionString("DataBase");
 
 builder.Services.AddDbContext<BancoContext>(options =>
     options.UseSqlServer(connectionString));
+// final da conexao do db
+
+// injeção de dependecias
+builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
 
 var app = builder.Build();
 
