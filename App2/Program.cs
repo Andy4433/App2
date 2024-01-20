@@ -1,24 +1,23 @@
 using App2.Data;
 using Microsoft.EntityFrameworkCore;
-using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-// Add services to the container.
+// Adicione serviços ao contêiner.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<BancoContext>
-(options => options.UseSqlServer(DataBase)));
+var connectionString = builder.Configuration.GetConnectionString("DataBase");
 
+builder.Services.AddDbContext<BancoContext>(options =>
+    options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure o pipeline de solicitação HTTP.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    // O valor HSTS padrão é 30 dias. Você pode querer alterar isso para cenários de produção, consulte https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
