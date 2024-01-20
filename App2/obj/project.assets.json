@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net8.0": {
       "Azure.Core/1.24.0": {
         "type": "package",
         "dependencies": {
@@ -3629,7 +3629,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net8.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0",
@@ -3638,29 +3638,29 @@
     ]
   },
   "packageFolders": {
-    "/home/andys/.nuget/packages/": {}
+    "C:\\Users\\PC GAMER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/andys/projetos/projeto/App2/App2/App2.csproj",
+      "projectUniqueName": "C:\\Users\\PC GAMER\\Desktop\\App2\\App2\\App2\\App2.csproj",
       "projectName": "App2",
-      "projectPath": "/home/andys/projetos/projeto/App2/App2/App2.csproj",
-      "packagesPath": "/home/andys/.nuget/packages/",
-      "outputPath": "/home/andys/projetos/projeto/App2/App2/obj/",
+      "projectPath": "C:\\Users\\PC GAMER\\Desktop\\App2\\App2\\App2\\App2.csproj",
+      "packagesPath": "C:\\Users\\PC GAMER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC GAMER\\Desktop\\App2\\App2\\App2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/andys/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\PC GAMER\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -3671,8 +3671,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -3716,7 +3716,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

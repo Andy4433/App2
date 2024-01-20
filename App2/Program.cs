@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<BancoContext>
-(options => options.UseNpgsql("ConnectionStrings__DefaultConnection=User ID=postgres;Password=postgres;Server=db;Port=5432;Database=example; IntegratedSecurity=true; Pooling=true;"));
+(options => options.UseSqlServer(DataBase)));
 
 
 var app = builder.Build();
