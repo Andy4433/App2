@@ -1,10 +1,11 @@
+@model ContatoModel
 @{
     ViewData["Title"] = "Deletar Contato";
 }
+
 <div class="text-center">
-    <h3>Deseja remover e contato? </h3>
-
+    <h3>Deseja remover o contato "@Model.Nome"? </h3>
 </div>
-<a role="button"type="button" class="btn btn-danger btn-block"asp-controller="Contato" asp-action="Index">Deletar</a>
-<a role="button"type="button" class="btn btn-primary btn-block"asp-controller="Contato" asp-action="Apagar">Sair</a>
 
+<a role="button" type="button" class="btn btn-primary btn-block" asp-controller="Contato" asp-action="Index">Sair</a>
+<a role="button" type="button" class="btn btn-danger btn-block" asp-controller="Contato" asp-action="Del" asp-route-id="@Model.id">Deletar</a>

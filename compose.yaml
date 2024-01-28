@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   server:
     build:
@@ -8,31 +10,27 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    develop:
-      watch:
-        - action: rebuild
-          path: .
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=User ID=postgres;Password=postgres;Server=db;Port=5432;Database=example; IntegratedSecurity=true; Pooling=true;
-  db:
-    image: postgres
-    restart: always
-    user: postgres
-    secrets:
-      - db-password
-    volumes:
-      - db-data:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_DB=example
-      - POSTGRES_PASSWORD_FILE=/run/secrets/db-password
+      - ConnectionStrings__DefaultConnection=Server=localhost;Database=DB_SistemaContatos;Integrated Security=True;
     healthcheck:
-      test: [ "CMD", "pg_isready" ]
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
       interval: 10s
       timeout: 5s
       retries: 5
+
+  db:
+    image: mcr.microsoft.com/mssql/server
+    restart: always
+    network_mode: "host"
+    environment:
+      - ACCEPT_EULA=Y
+    command: ["sqlservr", "--memory=1g"] 
+    healthcheck:
+      test: ["CMD", "sqlcmd", "-S", "localhost", "-Q", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
 volumes:
   db-data:
-secrets:
-  db-password:
-    file: db/password.txt

@@ -1,45 +1,59 @@
 using App2.Repositorio;
 using App2.Models;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace App2.Controllers
 {
-
     public class ContatoController : Controller
     {
-        private readonly IContatoRepositorio _contatorepositorio;
+        private readonly IContatoRepositorio _contatoRepositorio;
+        
         public ContatoController(IContatoRepositorio contatoRepositorio)
         {
-            _contatorepositorio = contatoRepositorio;
+            _contatoRepositorio = contatoRepositorio;
         }
+        
         public IActionResult Index()
         {
-            List<ContatoModel> contatos = _contatorepositorio.BuscarTodos();
+            var contatos = _contatoRepositorio.BuscarTodos();
             return View(contatos);
         }
-         public IActionResult Criar()
+        
+        public IActionResult Criar()
         {
             return View();
         }
-         public IActionResult Deletar()
+        
+        public IActionResult Deletar(int id)
         {
-            return View();
+            var contato = _contatoRepositorio.ListaPorId(id);
+            return View(contato);
         }
-         public IActionResult Editar()
+        
+        public IActionResult Del(int id)
         {
-            return View();
+            _contatoRepositorio.Apagar(id);
+            return RedirectToAction("Index");
         }
+        
+        public IActionResult Editar(int id)
+        {
+            var contato = _contatoRepositorio.ListaPorId(id);
+            return View(contato);
+        }
+        
         [HttpPost]
-        public IActionResult Criar(ContatoModel contato){
-            _contatorepositorio.Adicionar(contato);
+        public IActionResult Criar(ContatoModel contato)
+        {
+            _contatoRepositorio.Adicionar(contato);
             return RedirectToAction("Index");
         }
 
+        [HttpPost]
+        public IActionResult Editar(ContatoModel contato)
+        {
+            _contatoRepositorio.Atualizar(contato);
+            return RedirectToAction("Index");
+        }
     }
 }
