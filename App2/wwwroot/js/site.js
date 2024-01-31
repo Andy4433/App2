@@ -3,8 +3,13 @@
 
 // Write your JavaScript code.
 // cria a table e traduz para pt-br
-$(document).ready( function () {
-    $('#table-contatos').DataTable({
+$(document).ready( function () { 
+    getDataTable('#table-contatos')
+    getDataTable('#table-Usuario')
+} );
+
+function getDataTable(id){
+    $(id).DataTable({
         "ordering": true,
         "paging": true,
         "searching": true,
@@ -32,7 +37,7 @@ $(document).ready( function () {
             }
         }
     });
-} );
+}
 
 $('.close-alert').click(function(){
     $('.alert').hide('hide')

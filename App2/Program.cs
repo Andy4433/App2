@@ -17,7 +17,7 @@ builder.Services.AddDbContext<BancoContext>(options =>
 
 // injeção de dependecias
 builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
-
+builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 var app = builder.Build();
 
 // Configure o pipeline de solicitação HTTP.

@@ -1,4 +1,5 @@
 using App2.Models;
+
 using Microsoft.EntityFrameworkCore;
 
 using System;
@@ -19,5 +20,6 @@ namespace App2.Data
         // vamos chamar uma tabela chamada Contatos
         // o DbSet estamos informando a classe que representa a tabela
         public DbSet<ContatoModel> Contatos {get; set;}
+        public DbSet<UsuarioModel> Usuarios{get; set;}
     }
 }
