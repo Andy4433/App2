@@ -15,6 +15,7 @@ namespace App2.Models
 
         [Required(ErrorMessage = "Digite o Nome")]
         public string Nome{get; set;}
+        
         [Required(ErrorMessage = "Digite o login")]
         public string Login{get; set;}
 
@@ -22,6 +23,7 @@ namespace App2.Models
         [EmailAddress(ErrorMessage = "O e-mail é inválido!")]
         public string Email{get; set;}
         public PerfilEnum Perfil { get; set;}
+        
         [Required(ErrorMessage = "Digite a senha")]
         public string Senha {get; set;}
         public DateTime DataCadastro{get; set;}
